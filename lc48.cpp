@@ -9,7 +9,7 @@ public: //T.C: O(n*n) ans S.C: O(1)
                 swap(matrix[i][j],matrix[j][i]);
             }
         }
-        //second we are reversing each row
+        //second we are reversing each row 
         for(int i=0;i<n;i++){
             reverse(matrix[i].begin(),matrix[i].end());
         }
