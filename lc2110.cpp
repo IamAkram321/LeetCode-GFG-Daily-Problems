@@ -1,5 +1,5 @@
 class Solution {
-public:
+public: //T.C: O(n) and S.C: O(1)
     long long getDescentPeriods(vector<int>& prices) {
         long long ans  = 1;
         long long curr = 1;
