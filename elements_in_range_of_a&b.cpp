@@ -1,0 +1,20 @@
+class Solution {
+  public: // T.C: O(n log n + q log n) and S.C: O(1) ~ not considering ans vector
+    vector<int> cntInRange(vector<int> &arr, vector<vector<int>> &queries) {
+        
+        sort(arr.begin(),arr.end());
+        
+        vector<int> ans;
+        
+        for(auto &q : queries){
+            int a = q[0];
+            int b =q[1];
+            
+            int left  = lower_bound(arr.begin(),arr.end(),a)-arr.begin();
+            int right = upper_bound(arr.begin(),arr.end(),b)-arr.begin();
+           
+           ans.push_back(right-left);
+        }
+        return ans;
+    }
+};
