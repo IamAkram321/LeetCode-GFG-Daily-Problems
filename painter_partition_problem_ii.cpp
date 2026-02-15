@@ -6,6 +6,10 @@ class Solution {
         int painters = 1;
 
         for(int i = 0; i < arr.size(); i++) {
+
+
+
+            
             if(arr[i] > maxTime) return false;
 
             if(currTime + arr[i] <= maxTime) {
