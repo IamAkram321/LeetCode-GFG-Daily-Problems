@@ -14,7 +14,6 @@ public: //T.C: O(n) and S.C: O(n)
             st.push(i);
         }
         while(!st.empty()) st.pop();
-
         for(int i=n-1;i>=0;i--){
             while(!st.empty() && arr[st.top()] >= arr[i])
                 st.pop();
