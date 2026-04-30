@@ -3,7 +3,6 @@ class Solution {
     vector<int> commonElements(vector<int> &a, vector<int> &b, vector<int> &c) {
         int i = 0, j = 0, k = 0;
         vector<int> ans;
-
         while (i < a.size() && j < b.size() && k < c.size()) {
             if (a[i] == b[j] && b[j] == c[k]) {
                 ans.push_back(a[i]);
