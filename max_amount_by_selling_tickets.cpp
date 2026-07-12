@@ -5,7 +5,7 @@ public:
     int maxAmount(vector<int>& arr, int k) {
         priority_queue<int> pq;
         for (int x : arr) {
-            pq.push(x);
+            pq.push(x);              //4,3,6,2,4 and k=3
         }
         long long sum = 0;
         while (k > 0 && !pq.empty()) {
