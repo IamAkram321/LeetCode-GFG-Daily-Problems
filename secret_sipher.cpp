@@ -27,7 +27,7 @@ public:
                 k *= 2;
             } else {
                 ans += s[k];
-                k++;
+                k++;9
             }
         }
         return ans;
